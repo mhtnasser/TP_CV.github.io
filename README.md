@@ -14,7 +14,7 @@ SITE : https://mhtnasser.github.io/TP_CV.github.io/
  
  <ul>
   <li>
-  <p>Clone projet : https://github.com/mhtnasser/TP_CV.github.io.git</p>
+  <p>Clone projet : git clone https://github.com/mhtnasser/TP_CV.github.io.git</p>
   </li>
   <li>
   <p>Repertoire du projet : 
