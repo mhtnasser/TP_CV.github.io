@@ -1,0 +1,183 @@
+/***************************************
+/* Grille de mise en page pour le mobile
+***************************************/
+.grid_6,
+	.grid_8,
+	.grid_10,
+	.grid_16,
+	.container_16 {
+		margin: 0 10px;
+	}
+
+/**********
+/* Header
+**********/
+	header[role=banner] {
+		background:#fff;
+		border-bottom:4px solid #33a4c9;
+		padding: 19px 0;
+		overflow: hidden;
+	}
+	
+	header figure {
+		display: none;
+	}
+	
+	header hgroup {
+		text-align: center;
+	}
+	
+	header hgroup h1 {
+		color:#555;
+		font-family:'Just Another Hand', Arial, sans-serif;
+	    letter-spacing: 5px;
+	    font-weight: 600;
+	    word-spacing: 10px;
+	}
+	
+	header hgroup h2 {
+		color:#cecece;
+		font-style: italic;
+		line-height: 30px;
+		text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+	}
+
+
+/***************
+/* Corps - Main
+***************/
+	section[role=main] {
+		padding: 21px 0;
+		overflow: hidden;
+	}
+	
+	.apropos, .competences, .experiences, .formations, .loisirs, .contact {
+		margin-top: 63px;
+	}
+	
+	section[role=main] h3 {
+		border-bottom: 1px solid #e1e1e1;
+		padding: 0 0 20px 60px;
+		margin-top: 0px;
+		position: relative;
+ 	}
+	
+	section[role=main] h3:after, h3:before {
+		content: ' ';
+		display: block;
+		height: 50px;
+		left: 0;
+		position: absolute;
+		top: -15px;
+		width: 50px;
+	}
+	
+	section[role=main] h3:before {
+		background-color: #33a4c9;
+		border-radius: 25px;
+	}
+	
+	/***************
+	/* Pictos titres
+	***************/
+	section[role=main] .apropos h3:after {
+		background: url('../img/pictos-titre.png');
+		background-size: contain;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+	section[role=main] .competences h3:after {
+		background: url('../img/pictos-comp.png');
+		background-size: contain;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+
+	section[role=main] .experiences h3:after {
+		background: url('../img/pictos-experience.png');
+		background-size: contain;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+	
+	section[role=main] .formations h3:after {
+		background: url('../img/pictos-Formation.png');
+		background-size: contain;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+	
+	section[role=main] .loisirs h3:after {
+		background: url('../img/pictos-loisir.png');
+		background-size: contain;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+	
+	section[role=main] .contact h3:after {
+		background: url('../img/pictos-gris.png');
+		background-size: contain;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+
+	section[role=main] h4 {
+		margin-bottom: 0px;
+	}
+	
+	section[role=main] h4 strong {
+		color: #147393;
+		font-weight: normal;
+	}
+	
+	.experiences li, .formations li {
+		margin-bottom: 63px;
+	}
+	
+	.experiences li:last-child, .formations li:last-child {
+		margin-bottom: 21px;
+	}
+	
+	/**********************************************
+	/* Affichage des compétences sous forme de tags
+	**********************************************/
+	/*.competences .tags li {
+		background-color:#33a4c9;
+		border:1px solid #1b91b7;
+		border-radius: 15px;
+		color:#fff;
+		display: inline-block;
+		line-height: 13px;
+		margin: 0 7px 17px 0;
+		padding: 5px 10px;
+	}*/
+	
+	/************************************************
+	/* Affichage des compétences sous forme de barres
+	*************************************************/
+	.competences .barres li {
+		margin-bottom: 21px;
+		position: relative;
+	}
+	
+	.competences .barres li:after {
+		background: #e1e1e1;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		position: absolute;
+		width:100%;
+	}
+	
+	.competences .barres li span {
+		background: #33a4c9;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		left: 0;
+		position: absolute;
+		width: inherit;
+		z-index: 1;
+	}
